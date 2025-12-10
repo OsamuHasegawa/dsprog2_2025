@@ -43,7 +43,7 @@ class CalculatorApp(ft.Container):
         self.padding = 20
         self.content = ft.Column(
             controls=[
-                ft.Row(controls=[self.result], alignment="end"),
+                ft.Row(controls=[self.result], alignment=ft.MainAxisAlignment.END),
                 ft.Row(
                     controls=[
                         ExtraActionButton(text="AC", button_clicked=self.button_clicked),
